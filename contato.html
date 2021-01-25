@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contate nos!</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="bulma.min.css"/>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<img src="imgs/logo.png" class="logo-no-menu">
+		<div class="container-menu">
+			<a href="index.html"><button class="menubtn">Início</button></a>
+			<div class="dropdown">
+				<a href="servicos.html"><button class="dropbtn">Serviços</button></a>
+			</div>
+			<a href="contato.html"><button class="menubtn" >Contate a gente</button></a>
+			<button class="menubtn">Sobre</button>
+		</div>
+	</header>
+	<br>
+	<img src="imgs/trabalhador.png" id="foto-inline">
+	<form action="contato.php" method="POST">
+		<div class="container has-text-centered" id="container-form">
+			<h1 class="title has-text-white is-3">Preencha o formulário que responderemos o mais breve possível!</h1>
+			<div class="field">
+				<div class="control">
+					<p class="label">Nome completo</p><input name="nome" class="input" type="text" placeholder="Primary input">
+				</div>
+			</div>
+			<div class="field">
+				<div class="control">
+					<p class="label">E-mail</p><input name="email" class="input" type="text" placeholder="Primary input">
+				</div>
+			</div>
+			<p class="label">Telefone para contato e selecione o serviço desejado</p>
+			<div class="container-ao-lado">
+				<div class="field">
+					<div class="control">
+						<input name="telefone" class="input" type="text" placeholder="Primary input">
+					</div>
+				</div>
+				<div class="select">
+					<select>
+						<option >Selecione o serviço</option>
+						<option >With options</option>
+					</select>
+				</div>
+			</div>
+			<p class="label">Descreva detalhadamente o que necessita:<p class="label"><textarea name = "descricao" class="textarea" placeholder="e.g. Hello world"></textarea>
+				<br>
+				<input class="button" type="submit" value="Enviar">
+			</div>
+		</form>
+		<div class="container has-text-centered" id="social">
+			<h1 class="title has-text-white is-3">Ou entre em contato por nossas redes sociais!</h1>
+			<img src="imgs/zap.png">
+			<img src="imgs/insta.png">
+			<img src="imgs/face.png">
+		</div>
+
+		<footer>
+			<h1 class="title has-text-white is-6">©2021 copyright Git Lab, todos direitos reservados.</h1>
+		</footer>
+	</body>
+	</html>
