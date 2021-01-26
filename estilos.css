@@ -1,19 +1,19 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
 header {
-	background-color: #fff0e6;
-	width: 100%;
-	margin: 0;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: #fff0e6;
+  width: 100%;
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-	color: inherit;
+  color: inherit;
 }
 
 footer {
@@ -24,15 +24,15 @@ footer {
 }
 
 .logo-no-menu {
-	width:180px; 
-	height: 120px;
-	margin-right: 1%;
+  width:180px; 
+  height: 120px;
+  margin-right: 1%;
 }
 
 .container-menu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
@@ -69,38 +69,44 @@ footer {
   display: block;
 }
 
-.dropdown:hover .dropbtn, .menubtn:hover, .botao:hover, .servico:hover {
+.dropdown:hover .dropbtn, .menubtn:hover, .botao:hover, .elemento-servico:hover {
   background-color: #ff6600;
 }
 
 .img-fundo {
-	width: 100vw;
-	height: 100vh;
-	filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
 
 }
 
+.img-fundo2 {
+  width: 100vw;
+  height: 60vh;
+}
+
 .gray, .gray2 {
-	filter: blur(9px);
-	z-index: 1;
-	background-color: black;
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
+  filter: blur(9px);
+  z-index: 1;
+  background-color: black;
+  position: absolute;
 }
 
 .gray {
   opacity: 0.4;
+  height: 100vh;
+  width: 100vw;
 }
 
 .gray2 {
-  opacity: 0.6;
+  opacity: 0.0;
+  height: 60vh;
+  width: 100vw;
 }
 
 #container {
   width: 100vw;
-  height: 100vh;
-  margin: 0;
+  margin-bottom: 1%;
   text-align: center;
 }
 
@@ -113,12 +119,12 @@ footer {
 }
 
 .traco {
-	width: 100%;
-	height: 2px;
-	background-color: white;
+  width: 100%;
+  height: 2px;
+  background-color: white;
 }
 
-.botao, .servico {
+.botao {
   background-color: #ff8533;
   color: white;
   padding: 16px;
@@ -130,7 +136,7 @@ footer {
 }
 
 #container-form, #social {
-	max-width: 50%;
+  max-width: 50%;
   background-color: #ff8533;
   padding: 30px;
   box-shadow: 2px 2px 2px gray;
@@ -183,21 +189,22 @@ footer {
   z-index: -1;
 }
 
-.servico {
-  margin: 1%;
+.elemento-servico {
+  background-color: #ff8533;
+  color: white;
+  padding: 16px;
+  font-size: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 30%; 
+  margin: 1%; 
 }
 
 .container-servicos {
   display: flex;
   flex-wrap: wrap;
-  min-width: 900px;
-  margin-top: 15%;
-}
-
-.s {
-  display: none;
-}
-
-.servico {
-  max-height: 55px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
 }
