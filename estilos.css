@@ -10,17 +10,48 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-a {
-  color: inherit;
 }
 
 footer {
+  display: flex;
+  flex-wrap: nowrap;
   margin-top: 3%; 
   background-color: #ff8533;
   padding: 30px;
-  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer p, footer h1{
+  max-width: 15vw;
+  margin: 1%;
+}
+
+footer img {
+  max-width: 50px;
+  max-height: 40px;
+  border-radius: 100px;
+  transition: 0.2s;
+  margin: 1%;
+  filter: grayscale(1.0);
+}
+
+footer img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0.0);
+  cursor: pointer;
+}
+
+.zap-fixado {
+  position: fixed;
+  z-index: 4;
+  right: 2%;
+  bottom: 4%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .logo-no-menu {
@@ -44,7 +75,7 @@ footer {
   border: none;
   cursor: pointer;
   width:150px; 
-  max-width:150px; 
+  min-width:150px; 
 }
 
 .dropdown-content {
@@ -198,6 +229,7 @@ footer {
   cursor: pointer;
   width: 30%; 
   margin: 1%; 
+  transition: 0.2s;
 }
 
 .container-servicos {
@@ -207,4 +239,35 @@ footer {
   align-items: center;
   margin: 0;
   width: 100vw;
+  background-color: #fff0e6;
+}
+
+.elemento-servico:hover {
+  background-color: #db4f09;
+  transform: scale(1.1);
+}
+
+.solicitar {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 120%;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 35%; 
+  margin: 1%; 
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 2px 2px 2px grey;
+  transform: translate(2%, -2%);
+}
+
+.solicitar:hover {
+  background-color: #000000;
+  color: white;
+  transform: scale(1.1) translate(2%, -2%);
+}
+
+.container-footer {
+  display: block;
 }
